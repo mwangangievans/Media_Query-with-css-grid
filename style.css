@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.A , .B , .C , .D , .E , .F , .G , .H , .I{
+    width: 400px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.A{
+    background-color: aquamarine;
+}
+.B{
+    background-color: blue;
+}
+.C{
+    background-color: gainsboro;
+}
+.D{
+    background-color: green;
+}
+.E{
+    background-color: bisque;
+}
+.F{
+    background-color: yellow;
+}
+.G{
+    background-color: palevioletred;
+}
+.H{
+    background-color: orange;
+}
+.I{
+    background-color: blue;
+}
+.container{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+ .container{
+    grid-template-columns: 1fr 1fr;
+ }
+}
+@media only screen and (max-width: 600px) {
+ .container{
+    grid-template-columns: 1fr;
+ }
+}
+
